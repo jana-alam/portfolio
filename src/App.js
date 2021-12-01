@@ -4,7 +4,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import MyModal from "./components/MyModal/MyModal";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/myModal" element={<MyModal />}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

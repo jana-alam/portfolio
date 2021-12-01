@@ -14,7 +14,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className=" bg-gray-100 py-20 px-12">
-      <h1 className="text-5xl font-semibold text-center m-0">My Projects</h1>
+      <h1 className="text-5xl font-semibold text-center m-0 text-purple-600">
+        My Projects
+      </h1>
       <div className="grid  grid-cols-1 sm:grid-cols-3 gap-8 mt-12 items-stretch">
         {myProject.map((singleProject) => (
           <div key={singleProject.id}>

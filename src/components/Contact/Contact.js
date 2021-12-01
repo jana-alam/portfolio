@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-12 sm:py-20 bg-gradient-to-b from-purple-900 to-purple-500"
+      className="py-12 sm:py-20 bg-gradient-to-b from-purple-400 to-red-600"
     >
       <h1 className="text-5xl font-semibold text-center m-0 text-white">
         Contact
@@ -20,10 +20,7 @@ const Contact = () => {
           className="p-2"
           name="information"
         ></textarea>
-        <button
-          type="submit"
-          className="p-2 bg-white text-yellow-700 font-bold"
-        >
+        <button type="submit" className="p-2 bg-white text-red-700 font-bold">
           Submit
         </button>
       </form>
