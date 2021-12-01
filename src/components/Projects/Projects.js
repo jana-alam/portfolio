@@ -28,7 +28,7 @@ const Projects = () => {
 
               <button
                 onClick={() => handleModalOpen(singleProject.id)}
-                className="no-underline inline-block px-2 py-2 bg-indigo-200 text-indigo-800 rounded-3xl mt-4"
+                className="no-underline inline-block px-4 py-2 bg-purple-300 text-purple-900 rounded-lg mt-4"
               >
                 Details
               </button>

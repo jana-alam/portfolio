@@ -5,7 +5,10 @@ import Zoom from "react-reveal/Zoom";
 
 const About = () => {
   return (
-    <section className="py-14 bg-indigo-700" id="about">
+    <section
+      className="py-14 bg-gradient-to-r from-purple-900 to-purple-400"
+      id="about"
+    >
       <h1 className="text-center text-4xl font-bold text-white">About Me</h1>
       <div className="sm:w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 items-center mt-12 justify-center">
         <div className="px-4 sm:px-12 space-y-3 mt-6 text-justify text-white">

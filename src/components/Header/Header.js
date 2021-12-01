@@ -4,7 +4,10 @@ import { Disclosure } from "@headlessui/react";
 
 const Header = () => {
   return (
-    <Disclosure as="nav" className="shadow bg-indigo-700">
+    <Disclosure
+      as="nav"
+      className="shadow bg-gradient-to-r from-purple-900 to-purple-400 fixed w-full"
+    >
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -19,10 +22,10 @@ const Header = () => {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:block sm:ml-6 items-center">
                   <div className="flex space-x-4">
-                    <a href="/home#home" className="text-white">
+                    <a href="#home" className="text-white">
                       Home
                     </a>
-                    <a href="home/#about" className="text-white">
+                    <a href="#about" className="text-white">
                       About
                     </a>
                     <a href="#projects" className="text-white">
