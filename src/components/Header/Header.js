@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Disclosure
       as="nav"
-      className="shadow bg-gradient-to-r from-purple-900 to-purple-400 fixed w-full"
+      className="shadow bg-gradient-to-r from-red-600 to-purple-600 fixed w-full"
     >
       {({ open }) => (
         <>

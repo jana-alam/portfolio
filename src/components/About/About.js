@@ -6,7 +6,7 @@ import Zoom from "react-reveal/Zoom";
 const About = () => {
   return (
     <section
-      className="py-14 bg-gradient-to-r from-purple-900 to-purple-400"
+      className="py-14 bg-gradient-to-r from-pink-600 to-purple-400"
       id="about"
     >
       <h1 className="text-center text-4xl font-bold text-white">About Me</h1>
