@@ -6,8 +6,10 @@ import MyModal from "../MyModal/MyModal";
 const Projects = () => {
   const { myProject } = useProjects();
   const [isOpen, setIsOpen] = useState(false);
-  const handleModalOpen = () => {
+  const [projectId, setProjectId] = useState(null);
+  const handleModalOpen = (n) => {
     setIsOpen(true);
+    setProjectId(n);
   };
 
   return (
@@ -25,19 +27,15 @@ const Projects = () => {
               <p className="text-gray-800">{singleProject.description}</p>
 
               <button
-                onClick={handleModalOpen}
+                onClick={() => handleModalOpen(singleProject.id)}
                 className="no-underline inline-block px-2 py-2 bg-indigo-200 text-indigo-800 rounded-3xl mt-4"
               >
                 Details
               </button>
-              <MyModal
-                isOpen={isOpen}
-                setIsOpen={setIsOpen}
-                singleProject={singleProject}
-              />
             </div>
           </div>
         ))}
+        <MyModal projectId={projectId} isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </section>
   );
