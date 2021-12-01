@@ -1,16 +1,27 @@
 import React from "react";
+import ReactTyped from "react-typed";
 import banner from "../../image/banner.png";
 
 const Banner = () => {
   return (
-    <section id="home">
+    <section id="home" className="py-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
         <div className="text-center space-y-4 mt-4 sm:mt-0 px-8">
           <h1 className="text-2xl">
             Myself <br />
             <span className="text-5xl">Jana Alam</span>
           </h1>
-          <p className="text-3xl">MERN Stack Developer</p>
+          <ReactTyped
+            className="text-3xl"
+            strings={[
+              "Mern Stack Developer",
+              "Web Developer",
+              "Front End Developer",
+            ]}
+            typeSpeed={60}
+            backSpeed={20}
+            loop
+          />
           <p>
             I have Strong knowledge in MERN Stack with experience in building
             Web Applications by using React.js for client side, Node.js/Express
@@ -20,7 +31,7 @@ const Banner = () => {
             href="https://drive.google.com/file/d/1n9FmPInyhZA2y847EJlWTMgLcT3ZvX4b/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
-            className="px-4 py-2 bg-indigo-500 text-white border-0 rounded-md inline-block"
+            className="px-4 py-2 bg-indigo-700 text-white border-0 rounded-md inline-block"
           >
             Download Resume
           </a>

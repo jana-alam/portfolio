@@ -2,8 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 sm:py-20 bg-indigo-200">
-      <h1 className="text-5xl font-semibold text-center m-0">Contact</h1>
+    <section id="contact" className="py-12 sm:py-20 bg-indigo-700">
+      <h1 className="text-5xl font-semibold text-center m-0 text-white">
+        Contact
+      </h1>
       <form
         method="POST"
         action="https://formsubmit.co/janaalam2929@gmail.com "
@@ -15,7 +17,10 @@ const Contact = () => {
           className="px-2"
           name="information"
         ></textarea>
-        <button type="submit" className="p-2 bg-indigo-400 text-white">
+        <button
+          type="submit"
+          className="p-2 bg-white text-indigo-700 font-bold"
+        >
           Submit
         </button>
       </form>
